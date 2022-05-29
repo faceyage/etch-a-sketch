@@ -3,14 +3,60 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    gap: 50px;
+    background-color: #181918;
+    color: white;
+}
+/* header */
+
+
+.title {
+    font-weight: bold;
+    font-size: 50px;
+    
+}
+/* main */
+.main {
+    display: flex;
+    gap: 100px;
+}
+
+/* Controller */
+.controller {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    gap: 20px;
+    width: 200px;
+    height: auto;
+}
+
+#penColor {
+    background: lightblue;
+    width: 100px;
+    height: 100px;
+}
+#sizeValue {
+    font-size: large;
+}
+
+button {
+    width: 120px;
+    height: 50px;
+    border-radius: 0.5rem;
     background-color: #181918;
     color: white;
 }
 
-.main {
+
+/* grids */
+#grids {
     display: flex;
-    gap: 50px;
-    background-color: gray;
+    flex-direction: column;
+    height: 500px;
+    width: 500px;
+    border: 1px black solid;
 }
 
 .grid {
@@ -23,31 +69,3 @@ body {
     flex: auto;
 }
 
-#grids {
-    display: flex;
-    flex-direction: column;
-    height: 700px;
-    width: 700px;
-    border: 1px black solid;
-}
-
-.grid:hover {
-    background-color: black;
-}
-
-/* Controller */
-
-.controller {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    width: 200px;
-    height: auto;
-}
-
-button {
-    width: 120px;
-    height: 50px;
-    border-radius: 0.5rem;
-}

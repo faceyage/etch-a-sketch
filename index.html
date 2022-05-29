@@ -10,26 +10,25 @@
 </head>
 <body>
     <div class="header">
-        <h1>ETCH A SKETCH</h1>
+        <h1 class="title">ETCH A SKETCH</h1>
     </div>
     <div class="main">
         <div class="controller">
-            <div>
-                <label for="penColor">Pen color: </label>
-                <input type="color" id="penColor" value="#0000ff">
-            </div>
+            <input type="color" id="penColor" value="#0000ff">
             <!-- <div>
                 <label for="bgColor">Background Color: </label> 
                 <input type="color" id="bgColor" value="#0000ff">
             </div> -->
-            <button id="colorMode">Color Mode</button>
+            <button id="colorBtn">Color Mode</button>
             <button id="rainbowBtn">Rainbow mode</button>
             <button id="eraserBtn">Eraser</button>
             <button id="clearBtn">Clear</button>
-            <button id="sizeBtn">Size</button>
+            <div id="sizeValue">16 x 16</div>
+            <input id="sizeSlider" type="range" value="16" min="1" max="64">
+            <!-- <button id="sizeBtn">Size</button> -->
         </div>
         <div id="grids">
-
+            
         </div>
     </div>
 </body>
