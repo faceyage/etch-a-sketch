@@ -7,6 +7,12 @@ body {
     color: white;
 }
 
+.main {
+    display: flex;
+    gap: 50px;
+    background-color: gray;
+}
+
 .grid {
     background-color: red;
     flex: auto;
@@ -27,4 +33,21 @@ body {
 
 .grid:hover {
     background-color: black;
+}
+
+/* Controller */
+
+.controller {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 200px;
+    height: auto;
+}
+
+button {
+    width: 120px;
+    height: 50px;
+    border-radius: 0.5rem;
 }
