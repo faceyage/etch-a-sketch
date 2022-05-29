@@ -9,9 +9,28 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>ETCH A SKETCH</h1>
-    <div id="grids">
+    <div class="header">
+        <h1>ETCH A SKETCH</h1>
+    </div>
+    <div class="main">
+        <div class="controller">
+            <div>
+                <label for="penColor">Pen color: </label>
+                <input type="color" id="penColor" value="#0000ff">
+            </div>
+            <!-- <div>
+                <label for="bgColor">Background Color: </label> 
+                <input type="color" id="bgColor" value="#0000ff">
+            </div> -->
+            <button id="colorMode">Color Mode</button>
+            <button id="rainbowBtn">Rainbow mode</button>
+            <button id="eraserBtn">Eraser</button>
+            <button id="clearBtn">Clear</button>
+            <button id="sizeBtn">Size</button>
+        </div>
+        <div id="grids">
 
+        </div>
     </div>
 </body>
 </html>
