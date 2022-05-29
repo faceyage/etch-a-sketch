@@ -8,14 +8,21 @@ body {
 }
 
 .grid {
-    height: 16px;
-    width: 16px;
     background-color: red;
+    flex: auto;
+}
+
+.line {
+    display: flex;
+    flex: auto;
 }
 
 #grids {
     display: flex;
-
+    flex-direction: column;
+    height: 700px;
+    width: 700px;
+    border: 1px black solid;
 }
 
 .grid:hover {
