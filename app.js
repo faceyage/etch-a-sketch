@@ -76,6 +76,7 @@ function addButtonListeners() {
     const penColorPalette = document.querySelector("#penColor");
     penColorPalette.addEventListener("change", (e) => {
         penColor = e.target.value;
+        e.target.style = `border-color: ${penColor}`;
         console.log(penColor)
     });
 
@@ -89,9 +90,9 @@ function addButtonListeners() {
 function changeButtonColor(e) {
     const buttons = document.querySelectorAll("button");
     buttons.forEach(btn => {
-        btn.style.backgroundColor = "#181918";
+        btn.classList.remove("selected");
     });
-    e.target.style.backgroundColor = "#262929";
+    e.target.classList.add("selected");
 }
 
 createGrids(size);

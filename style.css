@@ -31,12 +31,23 @@ body {
     width: 200px;
     height: auto;
 }
-
+/* pen color */
 #penColor {
     background: lightblue;
-    width: 100px;
-    height: 100px;
+    padding: 0;
+    border: 50px solid black;
+    border-radius: 500px;
 }
+
+#penColor::-webkit-color-swatch-wrapper {
+    padding: 0;
+}
+
+#penColor::-webkit-color-swatch {
+    border: none;
+}
+
+/* current size value for grid size */
 #sizeValue {
     font-size: large;
 }
@@ -49,6 +60,9 @@ button {
     color: white;
 }
 
+.selected {
+    background-color: #262929;
+}
 
 /* grids */
 #grids {
